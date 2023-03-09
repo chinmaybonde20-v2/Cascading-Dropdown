@@ -6,7 +6,11 @@
         <LeftNavbar />
       </div>
       <!-- :rows="submittedDataarray" -->
+<<<<<<< HEAD
       <!-- Table s-->
+=======
+      <!-- Table -->
+>>>>>>> 1d40540 (owner Form)
       <div class="main-body">
         <h1>Welcome to {{ buyer.apartName }}</h1>
         <hr>
