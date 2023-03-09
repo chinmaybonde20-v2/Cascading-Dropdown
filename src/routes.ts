@@ -4,6 +4,7 @@ import ContactUs from  './views/ContactUs.vue'
 import FormRout from  './views/FormRout.vue'
 
 import {createRouter,createWebHistory } from 'vue-router'
+import EditPage from  './views/EditPage.vue'
 
 const routes = [
     {
@@ -25,6 +26,11 @@ const routes = [
         name:'FormRout',
         component:FormRout,
         path:'/FormRout'
+    },
+    {
+        name:'EditPage',
+        component:EditPage,
+        path:'/EditPage'
     }
 ]
 

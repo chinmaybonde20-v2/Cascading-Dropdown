@@ -8,7 +8,7 @@ import LeftNavbar from "@/components/MyComponents/LeftNavbar.vue";
 import MyTable from "@/components/MyComponents/MyTable.vue";
 import { walkBlockDeclarations } from "@vue/compiler-core";
 import MyDropdown from "@/components/MyComponents/MyDropdown.vue";
-import { submittedDataarray } from './HomeView'
+import { submittedDataarray,editDetail } from './HomeView'
 
 
 // const submitdatainArray = (submittedDataobj: object) => {
@@ -44,8 +44,11 @@ const columns = reactive([
 
 const rows = reactive([
   { selectedCountry: "Pune", selectedState: "Wakad", selectedDistrict: 20, apartName: "Goodwill" },
+  { selectedCountry: "Mumbai", selectedState: "Nerul", selectedDistrict: 20, apartName: "Mahadu Nivas" },
   
 ]);
+
+
 </script>
 <template>
   <div>
@@ -79,7 +82,10 @@ const rows = reactive([
 
               <span v-if="props.column.field == 'action'">
 
-                <button class="row-btn" @click="editUserDetail(props.row)" id="view"><font-awesome-icon icon="eye" class="icon eye" />Edit</button>
+                <router-link to="/EditPage">
+                  <button class="row-btn" @click="editDetail(props.row)" id="view"><font-awesome-icon icon="eye" class="icon eye" />Edit</button>
+                </router-link>
+
 
 
                 <button class="row-btn" @click="viewUserDetail(props.row)" id="view"><font-awesome-icon icon="eye" class="icon eye" />View</button>

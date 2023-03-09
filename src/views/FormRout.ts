@@ -22,6 +22,8 @@ export const submitApartmentdetailformfunc = () => {
         selectedState: selectedState.value.name,
         selectedDistrict: selectedDistrict.value.name,
         apartName: apartName.value,
+        floorNo: floorNo.value,
+        flatNo:flatNo.value
     };
     submittedDataarray.push(submittedDataobj);
     console.log(submittedDataobj);
@@ -29,7 +31,8 @@ export const submitApartmentdetailformfunc = () => {
     selectedCountry.value = '';
     selectedState.value = '';
     selectedDistrict.value = '';
-
+    // floorNo.value = '';
+    // flatNo.value = '';
     emits("subdataObj", submittedDataobj);
     handleReset();
 };
@@ -156,4 +159,4 @@ export const onCountryChange = () => {
     console.log(selectedCountry.value);
 
     // console.log(selectedCountry.value);
-}
+};
