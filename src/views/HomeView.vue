@@ -40,13 +40,13 @@ const columns = reactive([
     sortable: false,
   }
 ]);
-// const rows = reactive([]);
+const rows = reactive([]);
 
-const rows = reactive([
-  { selectedCountry: "Pune", selectedState: "Wakad", selectedDistrict: 20, apartName: "Goodwill" },
-  { selectedCountry: "Mumbai", selectedState: "Nerul", selectedDistrict: 20, apartName: "Mahadu Nivas" },
+// const rows = reactive([
+//   { selectedCountry: "Pune", selectedState: "Wakad", selectedDistrict: 20, apartName: "Goodwill" },
+//   { selectedCountry: "Mumbai", selectedState: "Nerul", selectedDistrict: 20, apartName: "Mahadu Nivas" },
   
-]);
+// ]);
 
 
 </script>
@@ -68,7 +68,7 @@ const rows = reactive([
       <div class="main-body">
         <h3>TABLE DATA</h3>
         <div class="tb">
-          <vue-good-table :columns="columns" :rows="rows" :search-options="{
+          <vue-good-table :columns="columns" :rows="submittedDataarray" :search-options="{
             enabled: true,
           }" :pagination-options="{
                 enabled: true,

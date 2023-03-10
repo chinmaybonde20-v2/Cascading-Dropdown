@@ -5,8 +5,9 @@ import {openAparmentformfunction} from './TypeScript/LeftNavbar'
 
 <template>
   <div class="leftbar">
-    <button>View Buildings List</button><br><br>
-
+    <router-link to="/"><button>View Buildings List</button></router-link>
+    
+    <br><br>
     <router-link to="/FormRout">Open Form</router-link>
   </div>
 </template>

@@ -31,8 +31,8 @@ export const submitApartmentdetailformfunc = () => {
     selectedCountry.value = '';
     selectedState.value = '';
     selectedDistrict.value = '';
-    // floorNo.value = '';
-    // flatNo.value = '';
+    floorNo.value = '';
+    flatNo.value = '';
     emits("subdataObj", submittedDataobj);
     handleReset();
 };
