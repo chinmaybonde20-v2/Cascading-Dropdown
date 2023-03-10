@@ -6,7 +6,7 @@
       <LeftNavbar />
     </div>
     <!-- :rows="submittedDataarray" -->
-    <!-- Table -->
+    <!-- Tables -->
     <div class="main-body">
       <h1>Welcome to {{ buyer.apartName }}</h1>
       <h1>Total floors :{{ buyer.floorNo }}</h1>
