@@ -49,7 +49,6 @@ watch(selectedState, () => {
         <LeftNavbar />
       </div>
       <div class="main-body">
-
         <div v-show="true">
           <div>
             <h3>Please fill the form</h3>
@@ -61,7 +60,11 @@ watch(selectedState, () => {
                 <label for="districts">Select a district:</label>
                 <select v-model="selectedCountry" @change="onCountryChange">
                   <option value="">Select district:</option>
-                  <option v-for="country in areas" :value="country" :key="country">
+                  <option
+                    v-for="country in areas"
+                    :value="country"
+                    :key="country"
+                  >
                     {{ country.name }}
                   </option>
                 </select>
@@ -83,9 +86,13 @@ watch(selectedState, () => {
                 <label for="sectors">Select a Sector:</label>
                 <select v-model="selectedDistrict" :disabled="!sectors">
                   <option value="">Select Sector-</option>
-                <option v-for="district in sectors" :value="district" :key="district">
-                  {{ district.name }}
-                </option>
+                  <option
+                    v-for="district in sectors"
+                    :value="district"
+                    :key="district"
+                  >
+                    {{ district.name }}
+                  </option>
                 </select>
                 <br />
               </div>
